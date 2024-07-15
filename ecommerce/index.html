@@ -1,0 +1,97 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>E-Commerce Store</h1>
+    </header>
+	
+	<nav>
+        <div class="logo">TRUE MATCH SUPER BLENDABLE LIQUID FOUNDATION (ROSE SAND 5R5C5K)</div>
+	
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <i class="fas fa-shopping-cart"></i>
+        </ul>
+    </nav>
+
+    <div class="flex-box">
+        <div class="left">
+            <div class="big-img">
+                <center>
+                <img src="https://www.lorealparis.co.in/-/media/project/loreal/brand-sites/oap/apac/in/local-products/makeup/face-makeup/3600523497737_packshot.png?rev=7b3c920f0c7a439eb559c022ee1ec2da">
+            </center>
+            </div>
+            <div class="images">
+                <div class="small-img">
+                    <img src="https://www.lorealparis.co.in/-/media/project/loreal/brand-sites/oap/apac/in/local-products/makeup/face-makeup/3600523497737_packshot.png?rev=7b3c920f0c7a439eb559c022ee1ec2da" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="https://www.lorealparis.co.in/-/media/project/loreal/brand-sites/oap/apac/in/local-products/makeup/face-makeup/3600523497706_packshot.png?rev=1157f303dc59498e8e7fcd2d56c32764" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="https://www.lorealparis.co.in/-/media/project/loreal/brand-sites/oap/apac/in/local-products/makeup/face-makeup/3600522862574_packshot.png?rev=73487bbd73624185909ad7eaddd7af15" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="https://www.lorealparis.co.in/-/media/project/loreal/brand-sites/oap/apac/in/local-products/makeup/face-makeup/3600522862505_packshot.png?rev=f62bd7810cd34733af58a3a7b27c5ce4" onclick="showImg(this.src)">
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="url">Home > Product > Foundation</div>
+            <div class="pname">Foundation</div>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="price">$23.99</div>
+            <div class="size">
+                <p>Size :</p>
+                <div class="psize">50g</div>
+                <div class="psize">100g</div>
+                <div class="psize">250g</div>
+                <div class="psize">500g</div>
+            </div>
+            <div class="quantity">
+                <p>Quantity :</p>
+                <input type="number" min="1" max="50" value="1">
+            </div>
+		<br>
+		<div class="description">
+                <ul type = "circle"></p>
+		<li>provides 24h hydration</li>
+		<li>hydrating complex consists of:Hyaluronic Acid, Glycerin and Aloe Vera extract</li>
+        <li>contains vitamin E</li>
+		<li>suitable for all skin types</li>
+           	</div>
+
+            <div class="btn-box">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 E-commerce Store. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let bigImg = document.querySelector('.big-img img');
+        function showImg(pic){
+            bigImg.src = pic;}
+    </script>
+</body>
+</html>
